@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document Title</title>
+    <title>hostel form</title>
     
 </head>
 <body>
@@ -11,11 +11,35 @@
     <form>
         <h1> Hostel room book form</h1>
         <label for="name">Full name</label>
-        <input type="text" id="name" placeholder="enter your name" required><br>
+        <input type="text" id="name" placeholder="enter your name" required autofocus><br><br>
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="abc@gmail.com"><br>
-        <label for="date">Check-in Date</label>
-        <input type="date" required id="date"><br>
+        <input type="email" id="email" placeholder="abc@gmail.com"><br><br>
+        <label for="mn">mobile number</label>
+        <input required id="mn" typr="tel"><br><br>
+        <label for="date in">Check-in Date</label>
+        <input type="date" required id="date in"><br><br>
+        <label for="date out">Check-out Date</label>
+        <input type="date" required id="date out"><br><br>
+        <label for="rt"> Room type</label>
+        <select id="rt" required>
+            <option>single seater,<b> non ac</b></option>
+            <option>double seater,<b> non ac</b></option>
+            <option>triple seater,<b> non ac</b></option>
+            <option>single seater, <b>ac</b></option>
+            <option>double seater, <b>ac</b></option>
+            <option>triple seater, <b>ac</b></option>
+   
+        </select><br><br>
+        <label for="nog">Number of Guest</label>
+        <input required id="nog" type="number"><br><br>
+        <label for="sr">special request</label><br>
+        <textarea cols="35" rows="7">our request are........</textarea><br>
+        <strong>one submittion per mobile number</strong><br>
+        <input type="submit">
+        <button type="reset">reset</button>
+        
+
+
 
 
     </form>
